@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SRM Quora</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #FAFAFA;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            padding: 0px 0px 0px 170px;
+            border-bottom: 1px solid silver;
+            overflow: hidden;
+            background-color:  #ccff66
+;
+  
+            
+            
+        }
+
+        .list{
+            list-style-type: none;
+            display: flex;
+            
+            justify-content: space-around;
+            width: 43%; 
+            
+        }
+        .list a{
+            text-decoration: none;
+            color: #4B5557;
+        }
+        .navbar ul li{
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 19px;
+            
+        }
+
+        .navbar ul li a:hover{
+            color: #4A0949;
+            border-right: 1.5px solid #4A0949;
+            
+        }
+        .logo{
+         
+            width: auto;
+            position: absolute;
+            left: 100px;
+            top: 5px;
+        }
+        
+        .sign button{
+           border-radius: 8px;
+           width: 100px;
+           border: 4px solid white;
+           color: white;
+           background-color: #4A0949;
+           font-size: 17px;
+           letter-spacing: 2px;
+           padding: 5px;
+
+           
+        }
+        .sign button:hover{
+            cursor: pointer;
+        }
+
+        .navbar .search{
+            
+            height: 30px;
+            position: relative;
+        }
+        .navbar .search input{
+           width: 300px;
+           border-radius: 10px;
+           height: 30px;
+        }
+
+        .content{
+            display: flex;
+            width: 70%;
+            margin: 30px 180px 0px 180px;
+        }
+
+        .cat{
+            width: auto;
+            background-color: #FAFAFA;
+            padding: 20px;
+        }
+        .cat ul li a{
+            text-decoration: none;
+            color: grey;
+        }
+
+        .cat ul li a:hover{
+            color: #B92B27;
+        }
+        .cat ul li{
+            list-style-type: none;
+            
+        }
+        .main{
+            width: 70%;
+            background-color: #FAFAFA;
+            padding: 20px;
+            
+        }
+        .main .submain{
+            background-color: white;
+            border-radius: 2px;
+            padding: 12px;
+            border: 0.5px solid silver;
+        }
+        .main .submain a{
+            text-decoration: none;
+            color: black;
+        }
+        .submain a:hover{
+            text-decoration: underline;
+        }
+        .name{
+            display: flex;
+        }
+        .name img{
+            width: 40px;
+            border-radius: 20px;
+        }
+
+        .more-content{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="sdfd.png" width="110px;" alt="">
+            </div>
+            
+                <ul class="list">
+                    <li><a href=""><i class="fas fa-home"> Home</i></a></li>
+                    <li><a href=""><i class="fas fa-edit">Answer</i></a></li>
+                    <li><a href=""><i class="fas fa-question-circle"></i>Ask</a></li>
+                    <li><a href=""><i class="fas fa-bell"></i>Notifications</a></li>
+                </ul>
+             
+            <div class="search">
+                <i class="fas fa-search" style="background-color: skyblue; border-radius: 5px;"></i>
+                <input type="text" placeholder="       Search answers..." onclick="black()">
+            </div>
+            
+            <div class="sign">
+                <button>Sign in</button>
+
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="cat">
+                <h3>All Categories</h3><br>
+                <hr color="silver" size="0.5"><br>
+                <ul class="">
+                    <li><a href=""><i class="fas fa-volleyball-ball" > Sports</i></a></li><br>
+                    <li><a href=""><i class="fas fa-edit" >Politics</i></a></li><br>
+                    <li><a href=""><i class="far fa-pencil-paintbrush">Arts & Culture</i></a></li><br>
+                    <li><a href=""><i class="fas fa-music"> Music</i></a></li><br>
+                    <li><a href=""><i class="fas fa-calculator"> Maths</i></a></li><br>
+                    <li><a href=""><i class="fas fa-edit">Politics</i></a></li><br>
+                    <li><a href=""><i class="fas fa-user-graduate"> Civil Services</i></a></li><br>
+                    <li><a href=""><i class="fas fa-graduation-cap"> Computer Science Engineering</i></a></li><br>
+                    <li><a href=""><i class="fas fa-edit">Politics</i></a></li><br>
+                    <li><a href=""><i class="fas fa-plug"> Electrical Engineering</i></a></li><br>
+                    <li><a href=""><i class="fas fa-edit">Cooking</i></a></li><br>
+                    <li><a href=""><i class="fas fa-edit">Dancing</i></a></li><br>
+                    
+                </ul>
+                <hr><br>
+                About. Careers. Terms <br>
+                Contact Us
+            </div>
+            <div class="main">
+                
+                <div class="submain">
+                    <p style="color: grey; font-size: 12px;">Category: Infectious Diseases</p>
+                    <h2><a href=""> How dangerous is the coronavirus?</a></h2><br>
+                    <div class="name">
+                        <img src="pp.jpg" alt=""><p style="margin-left:10px;"> Dr. Avula Sai Vasanth, Prof Biology, UC Berkley <br>
+                        <span style="color: grey; font-size: 15px;;">Updated 30th March 2020.</span>
+                        </p>
+                       
+                        
+                    </div>
+                    <p style="margin-top: 15px;">
+                        The coronavirus is extremely dangerous, and I suspect that the danger is currently being underplayed by the world medical community to minimize panic as we prepare for the worst.
+
+                        Here are the statistics at the time I write this (16 Feb 2020); I take them from Coronavirus Update (Live)
+
+                        cases: 69,290. deaths: 1,671 recovered: 9883
+
+                        The site states that the “Fatality Rate” is “2%”. But under that number, click “more details”. That will take you to this page:
+
+                        Coronavirus Mortality Rate (COVID-19).  <br> 
+                        On that page it shows why the 2% figure could be a gross underestimate. That figure is the ratio of the d...
+                        <a class="collapsible" href="">(more)</a><br><br>
+                        <i class="fas fa-share" > </i> 800+&nbsp;&nbsp;<i class="far fa-heart"> 252+</i>&nbsp;&nbsp;<i class="far fa-comments"> 252+</i>
+                    </p>
+
+                   
+                </div>
+                <div class="submain" style="margin-top: 15px;">
+                    <p style="color: grey; font-size: 12px;">Category: Computer Science Engineering</p>
+                    <h2><a href="">How should I get started in competitive programming?</a></h2><br>
+                    <div class="name">
+                        <img src="0.jpg" alt=""><p style="margin-left:10px;"> Nitesh Bharti, CEO at Google, California <br>
+                        <span style="color: grey; font-size: 15px;;">Updated 30th March 2020.</span>
+                        </p>
+                       
+                        
+                    </div>
+                    <p style="margin-top: 15px;">
+                        Here's how I did:
+                        <br>
+                        1. Learn one programming language really well - preferably C++. <br><br>
+                        2. Make sure you're super comfortable with all the constructs and can code up any algorithm given the pseudo code.
+                        <br><br>  
+                        3.Go to Hackerrank. Easy problems for starters and a good UI. Get a badge or two in C++ and Problem Solving (5 stars in Hackerrank is not too tough to get).
+                        <br><br> 
+                        4.Then go to SPOJ. Sort the problems in descending order of “number of people who have solved them”. This is important as it will make sure the problem level increases gradually. After 20–30 questions the problems tend to become quite tough. Solve 100.
+                        <br><br> 
+                        5.This...
+                        <a class="collapsible" href="">(more)</a><br><br>
+                        <i class="fas fa-share" > </i> 899+&nbsp;&nbsp;<i class="far fa-heart"> 292+</i>&nbsp;&nbsp;<i class="far fa-comments"> 332+</i>
+                    </p>
+
+                   
+                </div>
+
+
+                <div class="submain" style="margin-top: 15px;">
+                    <p style="color: grey; font-size: 12px;">Category: Arts & Culture</p>
+                    <h2><a href="">What is a good way to get started with dancing?</a></h2><br>
+                    <div class="name">
+                        <img src="laddu.jpg" alt="" height="40px;"><p style="margin-left:10px;"> Dr. Laddu Boy, Dance Professor, University of Arts, Pakistan <br>
+                        <span style="color: grey; font-size: 15px;;">Updated 30th March 2020.</span>
+                        </p>
+                       
+                        
+                    </div>
+                    <p style="margin-top: 15px;">
+                        I will tell you the most effective and fast way <br><br>
+                        1. Start listening to a lot of music.Of different kinds.This will help you improve your musicality.
+                        Soon your brain will be able to remember lyrics and beat patterns,vibrations,drops etc.
+                        <br><br> 2. Watch freestyle dances on YouTube of your favourite tracks again and again.
+                        Your brain will soon be able to associate steps with beats.
+                        Also you will be able to identify what kind of dance looks good on particular rhythms.
+                        <br><br>  3. Start freestyling yourself.This is the most easiest part.But most people don't do it because at this stage you have to start making actions. You ...
+                                                <a class="collapsible" href="">(more)</a><br><br>
+                                                <i class="fas fa-share" > </i> 758+&nbsp;&nbsp;<i class="far fa-heart"> 231+</i>&nbsp;&nbsp;<i class="far fa-comments"> 232+</i>
+                    </p>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+      });
+
+     
+    
+     
+
+    </script>
+
+</body>
+
+
+</html>

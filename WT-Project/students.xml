@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+    <?xml-stylesheet type="text/css" href="style.css" ?>
+        <student>
+            Student 1:
+                <info>
+                    Roll No: <roll>AP18110010604  </roll> 
+                    Name: <name>Nitesh Bharti</name>
+                    Branch: <branch>CSE</branch>
+                    Year Of Joining: <join>2018</join>
+                    Email-ID: <email>nitesh_bharti@srmap.edu.in</email>
+                </info>
+            Student 2:
+                <info>
+                    Roll No: <roll>AP18110010616</roll>
+                    Name: <name>Ayush Jaiswal</name>
+                    Branch: <branch>CSE</branch>
+                    Year Of Joining: <join>2018</join>
+                    Email-ID: <email>ayush_jaiswal@srmap.edu.in</email>
+                </info>
+            Student 3:
+                <info>
+                    Roll No:<roll>AP18110010642</roll>
+                    Name:<name>Laddu Boy</name>
+                    Branch:<branch>CSE</branch>
+                    Year Of Joining:<join>2018</join>
+                    Email-ID:<email>charan_sandeep@srmap.edu.in</email>
+                </info>
+
+                
+        </student>
+       

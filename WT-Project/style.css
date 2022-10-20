@@ -1,0 +1,31 @@
+ /* Define styling properties for each tag of the xml file */
+ student {
+     margin: auto;
+     color:black;
+     border: 3px dotted purple;
+     padding: 10px;
+     width: 60%;
+     margin-top: 100px;
+    
+
+    }
+ info {
+     display:block;
+     margin-left:15px;
+    }
+ 
+    roll, name {
+        font-size: 16px;
+        font-weight: bold;
+        color: purple;
+    }
+ coll, branch {
+    font-size: 16px;
+    font-weight: bold;
+    color: purple;
+    }
+ join, email {
+    font-size: 16px;  
+    font-weight: bold; 
+    color: purple; 
+}
